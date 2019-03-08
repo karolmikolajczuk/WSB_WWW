@@ -1,0 +1,86 @@
+/*
+	tag body in index.html
+*/
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+	div class which represents "body"
+*/
+.mainbody {
+	margin-top: 17%;
+}
+
+/*
+	div class in index.html
+*/
+.menu_z_linkami{
+	font-size: 22pt;
+	font-weight: bold;
+	text-align: center;
+	height: 175px;
+	position: relative;
+	border: 1px black solid;
+
+	margin-left: 45%;
+	margin-right: 45%;
+}
+
+/*
+	`a` tag in class menu_z_linkami
+	from index.html
+*/
+.menu_z_linkami a:hover {
+	color: orange;
+}
+
+/*
+	div class about navigating sites
+*/
+.podheader {
+	margin: 0;
+	padding: 0;
+	background-color: gray;
+
+	height: 70px;
+}
+
+/*
+	class which represents button
+*/
+.navigatebutton {
+	background-color: white;
+	border-radius: 5px;
+	height: 70px;
+	margin: 0;
+	padding: 0;
+	font-size: 60px;
+	text-decoration: none;
+	position: relative;
+
+	margin-left: 20px;
+}
+
+.navigatebutton:hover {
+	color: orange;
+}
+
+.navigatebuttonnext {
+	background-color: white;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	right: 0;
+	margin-right: 20px;
+	position: absolute;
+
+	height: 70px;
+	font-size: 58px;
+}
+
+.navigatebuttonnext:hover {
+	color: orange;
+}
