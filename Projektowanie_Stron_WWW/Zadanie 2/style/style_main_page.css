@@ -1,0 +1,36 @@
+em {
+  color: red;
+}
+
+#wyrozniony {
+  background-color: yellow;
+}
+
+u {
+  text-decoration: green underline wavy;
+}
+
+zrodlo {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  right: 40px;
+  color: gray;
+  font-style: italic;
+}
+
+tr, th, td {
+  border: 3px black solid;
+}
+
+th {
+  background-color: rgb(230, 230, 230);
+}
+
+table {
+  border: 3px black solid;
+  border-spacing: 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
