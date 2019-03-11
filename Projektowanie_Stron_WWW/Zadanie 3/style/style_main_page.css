@@ -1,36 +1,83 @@
+/* set spacing on 0 */
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+/* navigate panels */
+
 .categorytop {
-  background-color: rgb(30, 30, 30);
-  height: 150px;
+  overflow: hidden;
+	background-color: #333;
+	height: 80px;
+	width: 100%;
 }
 
 .categoryleft {
+	background-color: #C0C0C0;
+	width: 120px;
+	height: 700px;
+}
+
+/* linking sublists after navigating mouse on button */
+
+
+/* link_top is a div which contains whole */
+
+.link_top {
+  float: left;
+	overflow: hidden;
+}
+
+.link_top .linkbutton {
+	background-color: #3e8e41;
+  margin: 0;
+  font-size: 30px;
+	border: none;
+	outline: none;
+	color: white;
+}
+
+.categorytop a:hover, .link_top:hover .linkbutton {
+  background-color: red;
+}
+
+.sublink_top {
+	display: none;
+  position: absolute;
+  left: 0;
+  font-size: 25px;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.sublink_top a{
+  left: 0;
+  color: white;
+  text-decoration: none;
+}
+
+.sublink_top a:hover {
+	background-color: #eee;
+  color: black;
+}
+
+.link_top:hover .sublink_top {
+  display: block;
+}
+
+.link_left {
+	float: left;
+}
+
+.link_left:hover .sublink_left {
 
 }
+
+/* content of already set page */
 
 .main {
-
-}
-
-#link1top {
-
-}
-
-#link1top:hover #sublink1top {
-
-}
-
-#link2top {
-
-}
-
-#link2top:hover #sublink2top {
-
-}
-
-#link3top {
-
-}
-
-#link3top:hover #sublink3top {
 
 }
