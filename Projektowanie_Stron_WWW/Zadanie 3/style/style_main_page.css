@@ -5,38 +5,41 @@ body {
 	margin: 0;
 }
 
-/* navigate panels */
+/* navigate panels - big div, which contains rest in itself */
 
 .categorytop {
   overflow: hidden;
 	background-color: #333;
-	height: 80px;
 	width: 100%;
 }
 
 .categoryleft {
-	background-color: #C0C0C0;
-	width: 120px;
-	height: 700px;
+  margin-top: 50px;
+	background-color: #333;
+  width: 128px;
+	height: 400px;
+  padding: 0;
+  border: none;
 }
 
 /* linking sublists after navigating mouse on button */
 
-
+/* top menu panel */
 /* link_top is a div which contains whole */
 
 .link_top {
   float: left;
+  margin-right: 10px;
 	overflow: hidden;
 }
 
 .link_top .linkbutton {
-	background-color: #3e8e41;
   margin: 0;
   font-size: 30px;
 	border: none;
 	outline: none;
 	color: white;
+  background-color: #333;
 }
 
 .categorytop a:hover, .link_top:hover .linkbutton {
@@ -68,12 +71,48 @@ body {
   display: block;
 }
 
-.link_left {
-	float: left;
+/* left menu panel */
+
+.verticalpanel {
+  margin-top: 70px;
+  width: 200px;
 }
 
-.link_left:hover .sublink_left {
+.verticalmenu, .verticalsubmenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+.verticalmenu a{
+  display: block;
+  background-color: #333;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+.verticalmenu a:hover {
+  background-color: red;
+}
+
+.verticalmenu li:hover .verticalsubmenu {
+  display: block;
+  max-height: 200px;
+}
+
+.verticalsubmenu a {
+  background-color: #999;
+}
+
+.verticalsubmenu a:hover {
+  background-color: #666;
+}
+
+.verticalsubmenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
 }
 
 /* content of already set page */
