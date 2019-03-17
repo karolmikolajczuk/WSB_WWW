@@ -8,9 +8,12 @@ body {
 /* navigate panels - big div, which contains rest in itself */
 
 .categorytop {
+	position: fixed;
   overflow: hidden;
 	background-color: #333;
 	width: 100%;
+	top: 0;
+	left: 0;
 }
 
 /* linking sublists after navigating mouse on button */
@@ -39,7 +42,7 @@ body {
 
 .sublink_top {
 	display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
   font-size: 25px;
   background-color: red;
@@ -71,6 +74,7 @@ body {
 	margin-bottom: 0;
   margin-top: 70px;
   width: 170px;
+	min-height: 100%;
 	position: fixed;
 }
 
