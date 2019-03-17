@@ -13,15 +13,6 @@ body {
 	width: 100%;
 }
 
-.categoryleft {
-  margin-top: 50px;
-	background-color: #333;
-  width: 128px;
-	height: 400px;
-  padding: 0;
-  border: none;
-}
-
 /* linking sublists after navigating mouse on button */
 
 /* top menu panel */
@@ -74,8 +65,12 @@ body {
 /* left menu panel */
 
 .verticalpanel {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
   margin-top: 70px;
-  width: 200px;
+  width: 170px;
+	position: fixed;
 }
 
 .verticalmenu, .verticalsubmenu {
@@ -92,16 +87,16 @@ body {
   color: white;
 }
 
+.verticalmenu a:hover {
+  background-color: red;
+}
+
 .verticalmenu li > .verticalsubmenu {
 	opacity: 0;
 	visibility: hidden;
 	position: absolute;
-	margin-left: 200px;
+	margin-left: 170px;
 	margin-top: -39px;
-}
-
-.verticalmenu a:hover {
-  background-color: red;
 }
 
 .verticalmenu li:hover > .verticalsubmenu {
@@ -120,5 +115,12 @@ body {
 /* content of already set page */
 
 .main {
+	margin-left: 170px;
+	margin-top: 70px;
+	padding: 0px 10px;
+	border: none;
+}
 
+.main .content {
+	float: right;
 }
