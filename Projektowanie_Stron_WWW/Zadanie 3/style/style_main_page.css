@@ -50,6 +50,7 @@ body {
 .sublink_top a{
   left: 0;
   color: white;
+	margin-right: 20px;
   text-decoration: none;
 }
 
@@ -121,6 +122,7 @@ body {
 	border: none;
 }
 
-.main .content {
-	float: right;
+.main .content p {
+	font-weight: bold;
+	font-size: 50px;
 }
