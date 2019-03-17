@@ -85,20 +85,28 @@ body {
 }
 
 .verticalmenu a{
-  display: block;
+	display: block;
   background-color: #333;
   text-decoration: none;
   padding: 10px;
   color: white;
 }
 
+.verticalmenu li > .verticalsubmenu {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	margin-left: 200px;
+	margin-top: -39px;
+}
+
 .verticalmenu a:hover {
   background-color: red;
 }
 
-.verticalmenu li:hover .verticalsubmenu {
-  display: block;
-  max-height: 200px;
+.verticalmenu li:hover > .verticalsubmenu {
+	opacity: 1;
+	visibility: visible;
 }
 
 .verticalsubmenu a {
@@ -107,12 +115,6 @@ body {
 
 .verticalsubmenu a:hover {
   background-color: #666;
-}
-
-.verticalsubmenu {
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: all 0.5s ease-out;
 }
 
 /* content of already set page */
