@@ -1,0 +1,12 @@
+.content {
+  margin-top: 43px;
+}
+
+.main .content table {
+  border: 2px orange solid;
+  border-spacing: 0;
+}
+
+.main .content tr, th, td {
+  border: 2px orange solid;
+}
