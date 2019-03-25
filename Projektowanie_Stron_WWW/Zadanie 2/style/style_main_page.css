@@ -34,3 +34,8 @@ table {
 h1, h2 {
   text-align: center;
 }
+
+ol ol {
+	list-style-type: decimal;
+	style: lower-alpha;
+}
