@@ -1,0 +1,91 @@
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 0;
+  border: 0;
+}
+
+q {
+  quotes: "„" "”";
+}
+
+q q {
+  quotes: "‚" "'";
+}
+
+q q q {
+  quotes: "»" "«";
+}
+
+q q q q {
+  quotes: "›" "‹";
+}
+
+q q q q q {
+  quotes: "`" "`";
+}
+
+p::first-letter {
+  font-weight: bold;
+  text-indent: 50px;
+  font-size: 19px;
+}
+
+p:hover, q:hover, tr:hover, li:hover {
+  background: gray;
+}
+
+p::selection, q::selection, tr::selection, li::selection {
+  background: red;
+  color: yellow;
+}
+
+table tr:nth-child(even) td:nth-child(even) {
+  background: #f0ffff;
+}
+
+table tr:nth-child(even) td:nth-child(odd) {
+  background: #e0eeee;
+}
+
+table tr:nth-child(odd) td:nth-child(even) {
+  background: #c1cdcd;
+}
+
+table tr:nth-child(odd) td:nth-child(odd) {
+  background:	#838b8b;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-indent: 2em;
+}
+
+.text {
+    text-indent: 1em;
+}
+
+.source {
+  color: gray;
+  font-size: 10px;
+  float: right;
+}
+
+.source::first-letter {
+  font-weight: normal;
+  font-size: 10px;
+}
+
+table, tr, td, th {
+  border: 1px solid black;
+  border-spacing: 0;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+}
