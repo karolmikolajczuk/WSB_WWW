@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: indigo;
+  color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.content {
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.menu {
+  width: 100%;
+  float: left;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: maroon;
+}
+
+.menu div {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: rgba(255,255,255,0.05);
+  color: #ffffff;
+}
+
+.menu .el:hover {
+  background-color: crimson;
+}
+
+h1 {
+  text-indent: 1em;
+}
+
+.footer {
+  background-color: indigo;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+  width: 100%;
+
+  position: fixed;
+  bottom: 0;
+}
+
+.hidden_menu {
+  /*Ogólnie o kontenerze*/
+  width: 50px;
+  height: 50px;
+  background: red;
+
+  /*Text w kontenerze*/
+  font-size: 45px;
+  padding-left: 5px;
+}
+
+.submenu {
+  visibility: hidden;
+  font-size: 15px;
+}
+
+.submenu > div {
+  width: auto;
+  padding: 23px;
+
+  float: left;
+
+  background-color: maroon;
+  color: #ffffff;
+}
+
+.hidden_menu:hover .submenu {
+  visibility: visible;
+}
+
+
+/* Drukowanko */
+@media print {
+  body {
+    color: black;
+  }
+
+  .menu div {
+    background-color: gray;
+  }
+
+  .footer, .header {
+    background-color: gray;
+  }
+}
+
+/* Duży ekran: */
+@media only screen and (min-width: 768px) {
+  .menu {
+    width: 20%;
+    margin-right: 10px;
+  }
+  .content {
+    width: 80%;
+    margin-left: 10px;
+  }
+}
+
+/* CSS dla różnego rodzaju stron */
+
+@media (min-width: 1081px) and (orientation: landscape) {
+
+}
+
+@media (min-width: 1081px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 1000px) and (max-width: 1080px) and (orientation: landscape) {
+
+}
+
+@media (min-width: 1000px) and (max-width: 1080px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 768px) and (max-width: 999px) and (orientation: landscape) {
+
+}
+
+@media (min-width: 768px) and (max-width: 999px) and (orientation: portrait) {
+
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .hidden_menu {
+    visibility: hidden;
+  }
+  .menu {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .hidden_menu {
+    visibility: visible;
+  }
+  .menu {
+    visibility: hidden;
+  }
+}
