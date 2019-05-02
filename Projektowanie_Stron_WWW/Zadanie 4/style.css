@@ -35,7 +35,7 @@ p:hover, q:hover, tr:hover, li:hover {
   background: gray;
 }
 
-p::selection, q::selection, tr::selection, li::selection {
+::selection {
   background: red;
   color: yellow;
 }
