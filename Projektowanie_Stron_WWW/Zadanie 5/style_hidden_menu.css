@@ -1,0 +1,61 @@
+/*Określ wygląd znacznika elementu listy*/
+li {
+  /*Wyłącz/wyzeruj*/
+  list-style-type: none;
+}
+
+/*Ukryte menu, kontener tego menu*/
+.submenu {
+  /*Kolorki*/
+  background-color: black;
+  color: white;
+
+  /*Wycentruj text, Rozmiar czcionki*/
+  text-align: center;
+  font-size: 200%;
+
+  /*Odstępy*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*Wyłącz odstępy po lewej stronie listy "pierwszej"*/
+.submenu ul {
+  padding-left: 0;
+}
+
+/*Ustaw w podliście odstępy po lewej i górze, ukryj, ustaw rozmiar czcionki*/
+.submenu ul li ul {
+  padding-left: 0;
+  padding-top: 30px;
+
+  display: none;
+  font-size: 60%;
+}
+
+/*Elementy listy podlisty*/
+.submenu ul li ul li {
+  /*Odstepy dla czytelności*/
+  padding: 10px;
+
+  /*Oddziel liniami*/
+  border-bottom: solid 1px white;
+  border-top: solid 1px white;
+
+  /*Kolor tekstu*/
+  color: red;
+}
+
+/*Po najechaniu ustaw tło w podliście*/
+.submenu ul li ul li:hover {
+  background: yellow;
+}
+
+/*Imitacja kliknięcia bez użycia JS*/
+#trigger {
+  display: none;
+}
+
+#trigger:checked + .submenu ul li:hover ul {
+  display: block;
+}

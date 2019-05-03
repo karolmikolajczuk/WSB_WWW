@@ -1,0 +1,74 @@
+/* Drukowanko PC*/
+@media print {
+  body {
+    color: #CDCACA; /*Odcień szarego na chrome zmienia, na firefox czarny*/
+  }
+
+  .menu div {
+    background-color: white;
+    color: #CDCACA; /*Odcień szarego na chrome zmienia, na firefox czarny*/
+  }
+
+  .footer, .header {
+    background-color: white;
+    color: #CDCACA; /*Odcień szarego na chrome zmienia, na firefox czarny*/
+  }
+
+  /*Ukryj menu, zbędne do drukowania*/
+  .submenu, .menu {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/* CSS dla różnego rodzaju stron */
+
+/*Gdybym źle zrozumiał zadanie, to zrobiłem dla pozostałych też*/
+@media (min-width: 1800px) {
+  .submenu {
+    display: none;
+  }
+  .menu {
+    display: block;
+    max-width: 25%;
+  }
+  .content {
+    margin-left: 26%;
+  }
+}
+
+/*Nie wiem, czy dobrze zrozumiałem zadanie, że dla 1800px max*/
+@media (min-width: 768px) and (max-width: 1800px) {
+  .submenu {
+    display: none;
+  }
+  .menu {
+    display: block;
+    max-width: 25%;
+  }
+  .content {
+    margin-left: 26%;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .submenu {
+    display: none;
+  }
+  .menu {
+    display: block;
+    max-width: 25%;
+  }
+  .content {
+    margin-left: 26%;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .submenu {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}

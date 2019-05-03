@@ -1,0 +1,23 @@
+.header {
+  background-color: indigo;
+  color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.content {
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.footer {
+  background-color: indigo;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+  width: 100%;
+
+  position: fixed;
+  bottom: 0;
+}
