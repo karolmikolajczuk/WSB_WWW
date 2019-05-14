@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styl.css">
+	<script src="skrypty.js"></script>
+</head>
+
+<body class="lay1" id="main">
+<header>
+	<h1>Karol Mikołajczuk</h1>
+</header>
+
+<nav>
+	<div onclick="load('s0');">Strona główna</div>
+	<div onclick="show('gl-1')">Podstrona #1</div>
+	<nav id="gl-1">
+		<div onclick="load('s3')">Tabela #1</div>
+		<div onclick="load('s4');">Zdjecie #1</div>
+		<div onclick="load('s6');">Tekst #1</div>
+		<div onclick="hide('gl-1')">Schowaj ↑</div>
+	</nav>
+	<div onclick="show('gl-2')">Podstrona #2</div>
+	<nav id="gl-2">
+		<div onclick="load('s3')">Tabela #2</div>
+		<div onclick="load('s4');">Zdjecie #2</div>
+		<div onclick="load('s6');">Tekst #2</div>
+		<div onclick="hide('gl-2')">Schowaj ↑</div>
+	</nav>
+	<div onclick="show('gl-3')">Podstrona #3</div>
+	<nav id="gl-3">
+		<div onclick="load('s3')">Tabela #3</div>
+		<div onclick="load('s4');">Zdjecie #3</div>
+		<div onclick="load('s6');">Tekst #3</div>
+		<div onclick="hide('gl-3')">Schowaj ↑</div>
+	</nav>
+</nav>
+
+<div class="pokaRMenu" id="content">
+	<section id="s0">
+		<h1>Strona główna</h1>
+		<p>Karol Mikołajczuk</p>
+		<p>Informatyka, sem. 2, Inżynierskie, Stacjonarne</p>
+	</section>
+	<section id="s1">
+		<h1>Śródtytuł</h1>
+		<p>Działa tak, jak się spodziewaliśmy.</p>
+	</section>
+	<section id="s2">
+		<h1>Jeszcze jedna sekcja</h1>
+		<p>Po prostu mamy jedną dużą stronę</p>
+	</section>
+	<section id="s3">
+		<table onclick="load('s7')">
+			<tr>
+				<th>Kolumna 1</th>
+				<th>Kolumna 2</th>
+				<th>Kolumna 3</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+		</table>
+	</section>
+	<section id="s4">
+		<img onclick="load('s5')" src="zdjecie.png">
+	</section>
+	<section onclick="load('s4')" id="s5">
+		Po nacisnieciu na tekst, znowu bedzie zdjecie.
+	</section>
+	<section id="s6">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</section>
+	<section onclick="load('s3')" id="s7">
+		Po nacisnieciu na tekst, znowu bedzie tabela.
+	</section>
+</div>
+
+<nav>
+	<div class="hidbutt" onclick="hideRmenu()">Ukryj ↴</div>
+	<div onclick="setlay(1)">Domowy</div>
+	<div onclick="setlay(2)">Wyjazdowy</div>
+	<div onclick="setlay(3)">Trzeci</div>
+	<div onclick="setlay(4)">Do druku</div>
+</nav>
+
+<footer>
+	<div class="hidbutt" onclick="scrollUp();">
+		<p>Przewiń do góry ↑</p>
+	</div>
+	<div>
+		<p>Autor: Karol Mikołajczuk.</p>
+	</div>
+	<div class="hidbutt" onclick="showRmenu()">
+		<p>Menu layoutów ↑</p>
+	</div>
+</footer>
+
+<script>
+	load('s0');
+</script>
+</body>
+</html>
