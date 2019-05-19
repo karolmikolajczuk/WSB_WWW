@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./zadanie7_style.css">
+  </head>
+  <body>
+    <div id="top">Zadanie 7</div>
+    <div style="overflow-x:auto;" id="content">
+      <nav class="menus">
+        <!-- Menu sortowania -->
+        <label>Sortowanie</label>
+        <select id="kolumny_sort">
+          <option value="lp_sort">Lp</option>
+          <option value="country_sort">Państwo</option>
+          <option value="town_sort">Miasto</option>
+          <option value="ppl_sort">Ludność</option>
+          <option value="land_sort">Obszar</option>
+        </select>
+        <select id="rodzaj_sortowania">
+          <option value="rosn">rosnące</option>
+          <option value="mal">malejące</option>
+        </select>
+        <button onclick="sortTableData(document.getElementById('kolumny_sort').value,document.getElementById('rodzaj_sortowania').value)">Sortuj</button>
+        <!-- Koniec menu sortowania -->
+
+        <br>
+
+        <!-- Menu filtrowania -->
+        <label>Filtrowanie</label>
+        <select onchange="filterTableData(document.getElementById('filtruj').value)" id="filtruj">
+          <option value="">Wszystko</option>
+          <option value="Gdańsk Warszawa">Polska</option>
+          <option value="Boston Miami">USA</option>
+          <option value="Berlin Monachium">Niemcy</option>
+          <option value="Londyn Liverpool">Anglia</option>
+          <option value="Wiedeń">Austria</option>
+          <option value="Berno">Szwajcaria</option>
+          <option value="Madryt Barcelona">Hiszpania</option>
+          <option value="Gdańsk Warszawa Berlin Monachium Londyn Liverpool Madryt Barcelona Wiedeń Berno">Europa</option>
+          <option value="Boston Miami">Ameryka</option>
+        </select>
+        <!-- Koniec menu filtrowania -->
+      </nav>
+
+      <!-- Tabela -->
+      <table id="table_full">
+        <thead id="head_table"></thead>
+        <tbody id="body_table"></tbody>
+        <tfoot id="foot_table"></tfoot>
+      </table>
+      <!-- Koniec tabeli -->
+    </div>
+    <div id="foot">Karol Mikołajczuk</div>
+  </body>
+  <script type="text/javascript" src="./zadanie7_skrypt.js"></script>
+</html>
